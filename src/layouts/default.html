@@ -1,0 +1,26 @@
+<!doctype html>
+    <html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NM</title>
+        <meta name="description" content="Nastassia Makarava Resume">
+        <meta name="keywords" content="resume, job search, front end developer, web developer, HTML, CSSS, JS, JQuery">
+        <meta name="author" content="Nastassia Makarava">
+        <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    </head>
+    <body>
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+            {{> header_mobile }}
+        </div>
+        <div class="off-canvas-wrapper">
+            <div class="off-canvas-content" data-off-canvas-content>
+                {{> header}}
+                {{> body}}
+                {{> footer}}
+            </div>
+        </div>
+        <script src="{{root}}assets/js/app.js"></script>
+    </body>
+</html>

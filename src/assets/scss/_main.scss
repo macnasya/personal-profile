@@ -1,0 +1,558 @@
+$pskills-icon-size: 6.25rem;
+
+html, body {
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+/* Override Foundation */
+.button {
+    &.hollow {
+        &:hover,
+        &:focus {
+            color: $white;
+            border-color: $primary-color;
+            background-color: $primary-color;
+        }
+    }
+
+    &.active {
+        background-color: $flush-mahogany;
+        color: $white;
+    }
+}
+
+.close-button {
+    position: initial;
+    height: 2.5rem;
+    padding: 0 0.625rem;
+    width: 100%;
+    text-align: right;
+
+    &:focus {
+        outline: none;
+    }
+}
+/* End */
+
+.site-header,
+.title-bar {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    background-color: $black;
+}
+
+.title-bar {
+    background-color: $shark;
+    height: 2.5rem;
+}
+
+.menu {
+    .menu-item {
+        padding: 1.25rem 0.5rem;
+        font-size: 0.625rem;
+        line-height: 1;
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        vertical-align: top;
+        cursor: pointer;
+
+        @include breakpoint(large) {
+            padding: 1.25rem;
+            font-size: 0.875rem;
+        }
+
+        a {
+            color: inherit;
+            padding: 0;
+        }
+    }
+
+    .send-msg {
+        padding-left: 1.25rem;
+
+        .button {
+            font-size: 0.75rem;
+
+            @include breakpoint(large) {
+                font-size: 0.875rem;
+            }
+        }
+    }
+
+    &.horizontal{
+        .menu-item{
+            border-top: 0.25rem solid $black;
+
+            &:hover,
+            &.active {
+                background-color: $shark;
+                border-top: 4px solid $flush-mahogany;
+            }
+        }
+    }
+
+    &.vertical {
+        .menu-item{
+            border-top: 0.0625rem solid $shark;
+
+            &:hover,
+            &.active {
+                background-color: $shark;
+            }
+        }
+    }
+}
+
+
+
+.aboutme {
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-size: 1.125rem;
+        margin-bottom: 1.25rem;
+    }
+
+    p{
+        font-size: 0.875rem;
+        margin-bottom: 1.5rem;
+    }
+
+    h1,
+    h3 {
+        @include breakpoint(medium) {
+            text-align: left;
+        }
+    }
+
+    .myphoto {
+        text-align: center;
+        margin-bottom: 1.25rem;
+
+        img {
+            width: 100%;
+            max-width: 12.5rem;
+            border-radius: 50%;
+            
+            @include breakpoint(medium) {
+                max-width: none;
+            }
+        }
+    }
+}
+
+.headline {
+    font-size: 3rem;
+    line-height: 1;
+    width: 100%;
+    max-width: 24rem;
+    word-spacing: 24rem;
+    margin-bottom: 3.75rem;
+    border-bottom: 0.625rem solid $mine-shaft;
+    text-transform: uppercase;
+
+    @include breakpoint(medium) {
+        font-size: 4.5rem;
+    }
+
+    .pskills & {
+        border-color: $white;
+    }
+
+    .education &,
+    .experience & {
+        max-width: 27.5rem;
+    }
+
+    .tecskills & {
+        max-width: 25rem;
+    }
+
+    .portfolio & {
+        margin-bottom: 2rem;
+    }
+}
+
+.title {
+    font-size: 1.125rem;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.specify, .type, .date {
+    display: inline-block;
+    padding: 0 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.specify {
+    border-right: 0.0625rem solid $dark-gray;
+}
+
+.description {
+    font-size: 0.875rem;
+    margin-bottom: 0;
+}
+
+.button {
+    &.resume {
+        width: 12.5rem;
+        padding: 1rem;
+    }
+}
+
+.section {
+    padding: 3.75rem 0 2rem 0;
+
+    &.aboutme,
+    &.contacts {
+        padding-bottom: 3.75rem;
+    }
+
+    &.aboutme {
+        @include breakpoint(medium) {
+            padding-top: 7.5rem;
+        } 
+    }
+
+    &:nth-child(odd) {
+        background-color: $light-gray;
+    }
+
+    &:nth-child(even) {
+        background-color: $white;
+    }
+
+    &.pskills {
+        background-color: $flush-mahogany;
+    }
+}
+
+.portfolio {
+    .filter-wrapper {
+        margin-bottom: 2rem;
+    }
+
+    .filter {
+        float: left;
+        font-size: 0.625rem;
+        margin-right: 0.5rem;
+
+        @include breakpoint(medium) {
+            font-size: 0.75rem;
+            min-width: 4.5rem;
+            margin-right: 0.625rem;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .p-item {
+        position: relative;
+        background-color: $medium-gray;
+        box-shadow: $medium-gray 0 0 0.625rem;
+        overflow: hidden;
+
+        .p-img {
+            opacity: 0.75;
+        }
+
+        .p-img-over {
+            display: none;
+        }
+
+        figcaption {
+            display: none;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 2rem 0.625rem;
+            color: $dark-gray;
+            background-color: $white;
+            text-align: center;
+        }
+
+        .title {
+            display: block;
+            margin-bottom: 1.25rem;
+            color: $flush-mahogany;
+        }
+
+        &:hover {
+            .p-img {
+                display: none;
+            }
+
+            .p-img-over,
+            figcaption {
+                display: block;
+            }
+        }
+    }
+}
+
+.contacts {
+    .info {
+        color: $dark-gray;
+        margin-bottom: 0.25rem;
+    }
+}
+
+.social-wrapper {
+    margin-top: 1rem;
+
+    .social {
+        float: left;
+        font-size: 1.875rem;
+        margin-right: 0.625rem;
+        color: $flush-mahogany;
+    }
+}
+
+.pskills {
+    color: $white;
+
+    .psicon {
+        float: left;
+        width: $pskills-icon-size;
+        height: $pskills-icon-size;
+        line-height: $pskills-icon-size;
+        border: 0.125rem solid $white;
+        font-size: 2.25rem;
+        text-align: center;
+        border-radius: 50%;
+    }
+
+    .pstext {
+        margin-left: $pskills-icon-size + 2rem;
+        max-width: 25rem;
+    }
+
+    .title {
+        margin-bottom: 1.25rem;
+        font-weight: 600;
+    }
+}
+
+.education {
+    .course {
+        padding: 1.5rem 0.625rem;
+        text-align: center;
+        background-color: $white;
+        box-shadow: $medium-gray 0 0  0.625rem;
+        color: $dark-gray;
+        min-height: 20rem;
+
+        &.degree {
+            background-color: $flush-mahogany;
+            color: $white;
+
+            .title {
+                color: inherit;
+            }
+
+            .edicon,
+            .specify {
+                border-color: $white;
+            }
+        }
+    }
+
+    .title {
+        color: $flush-mahogany;
+        margin-bottom: 0.25rem;
+    }
+
+    .description {
+        margin-top: 1rem;
+
+        .resourse {
+            display: inline-block;
+            line-height: 1;
+            padding-left: 0.25rem;
+            border-left: 1px solid $dark-gray;
+            color: $flush-mahogany;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &:empty {
+                display: none;
+            } 
+        }
+    }
+
+    .edicon {
+        width: 5rem;
+        height: 5rem;
+        line-height: 5rem;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        vertical-align: middle;
+        text-align: center;
+        border: 0.125rem solid $dark-gray;
+        border-radius: 50%;
+    }
+}
+
+.tecskills {    
+    .primary {
+        text-align: center;
+
+       .title {
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+    }
+
+    .secondary {
+        ul {
+            max-width: 37.5rem;
+        }
+
+        .subheadline {
+            font-weight: 600;
+            font-size: 1.25rem;
+            margin-bottom: 1.125rem;
+        }
+
+        .skill {
+            padding: 0.625rem 1.25rem;
+            margin-bottom: 1.25rem;
+            border: 1px solid $medium-gray;
+            border-radius: 0.5rem;
+            color: $dark-gray;
+        }
+
+        .title {
+            display: block;
+            margin-left: 2.5rem;
+            line-height: 1.5rem;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+        }
+
+        .icon {
+            float: left;
+            font-size: 1.5rem;
+            margin-right: 1.25rem;
+        } 
+    }
+}
+
+.skill-progress {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+
+    span {
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translate(0,-50%);
+          -ms-transform: translate(0,-50%);
+              transform: translate(0,-50%);
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: $flush-mahogany;
+    }
+}
+
+.ex-item {
+    background-color: $white;
+    padding: 2rem 0;
+    margin-bottom: 3.75rem;
+    box-shadow: $medium-gray 0 0 0.625rem;
+    border-top: 0.1875rem solid  $flush-mahogany;
+
+    .title {
+        color: $flush-mahogany;
+    }
+
+    .company,
+    .period {
+        font-size: 0.875rem;
+        line-height: 1.8;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    .period {
+        margin-bottom: 2.5rem;
+    }
+
+    .ex-icon {
+        margin-right: 0.25rem;
+    }
+
+    .sub-title {
+        font-size: 1.125rem;
+        line-height: 1;
+        margin-bottom: 1.25rem;
+        font-weight: 600;
+    }
+
+    .describe {
+        font-size: 0.875rem;
+        margin-bottom: 0.625rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .functions {
+       display: none; 
+
+       .funclist {
+            list-style-type: disc;
+            padding-left: 1rem;
+        }
+    }
+}
+
+.switcher-wrap {
+    margin-bottom: 1.25rem;
+
+    @include breakpoint(medium) {
+        max-width: 17.5rem;
+    }
+
+    .switcher {
+        float: left;
+        width: 50%;
+    }
+}
+
+footer {
+    background-color: $black;
+    width: 100%;
+}
+
+.copy {
+    padding: 1.5rem 0;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: $white;
+}

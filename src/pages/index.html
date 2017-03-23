@@ -1,0 +1,162 @@
+<main role="main">
+    <section id="section_1" class="aboutme section">
+        <div class="row">
+            <div class="small-12 medium-4 medium-push-8 columns myphoto">
+                <img src="{{ root }}assets/img/myphoto.jpg" alt="Nastassia Makarava">
+            </div>
+            <div class="small-12 medium-8 medium-pull-4 columns">
+                <h1 class="text-center">Nastassia Makarava</h1>
+                <h3 class="text-center">Front End Developer &amp; Marketing Manager</h3>    
+                <p>Strong knowledge of HTML&amp;CSS pixel perfect psd to html conversion experience, well-written code. Familiarity with JavaScript, JQuery, Backbone, Twig, PHP. Experience with email markup,responsive design principles, cross-browser compatibility.</p>
+                <p>Great inner motivation to quickly learn and master new technologies to become successful in the new field and make contribution to real projects.</p>
+                <p>Five years of experience in marketing: deep understanding of business processes and customers’ needs, management of multiple projects under tight deadlines, marketing analytics and more.</p>
+                <a class="button resume" href="CV_nastassia_makarava.docx" download>Download resume</a> 
+            </div>
+        </div>  
+    </section>
+    <section id="section_2" class="pskills section">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2 class="headline">{{ content.personal_skills_title }}</h2>
+                <ul class="row small-up-1 medium-up-2">
+                    {{#each content.personal_skills}}
+                        <li class="column column-block">
+                            <span class="psicon fa {{ this.icon }}"></span>
+                            <div class="pstext">
+                                <h3 class="title">{{ this.title }}</h3>
+                                <p class="description">{{ this.description }}</p>
+                            </div>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="section_3" class="portfolio section">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2 class="headline">{{ content.portfolio_section_title }}</h2>
+                <div class="filter-wrapper clearfix">
+                    {{#each content.portfolio_filters}}
+                        <a class="button hollow small filter {{#if @first}}active{{/if}}" data-filter="{{this.data}}" href="#">{{this.title}}</a>
+                    {{/each}}
+                </div>
+                <ul class="row small-up-2 medium-up-3">
+                    {{#each content.portfolio_projects}}
+                        <li class="column column-block {{ this.filter_type }} filtered">
+                            <figure class="p-item">
+                                <a href="{{ this.link }}" target="_blank">
+                                <img class="p-img" src="{{ root }}{{ this.img_src }}" alt="{{ this.img_alt }}">
+                                <img class="p-img-over" src="{{ root }}{{ this.img_over_src }}" alt="{{ this.img_alt }}"></a>
+                                <figcaption>
+                                    <a class="title" href="{{ this.link }}" target="_blank">{{ this.title }}</a>
+                                    <p class="specify">{{ this.specify }}</p><p class="type">{{ this.type }}</p>
+                                </figcaption>   
+                            </figure>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="section_4" class="tecskills section">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2 class="headline">{{ content.technical_skills_title }}</h2>
+            </div>
+            <div class="small-12 large-8 columns primary">
+                <ul class="row small-up-2 medium-up-4 medium-up-3">
+                    {{#each content.technical_skills}}
+                        <li class="column column-block">
+                            <p data-progress="{{ this.progress_level }}" class="skill-progress"><span></span></p>
+                            <h3 class="title">{{ this.title }}</h3>
+                            <p class="description">{{ this.description }}</p>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <section class="small-12 large-4 columns secondary">
+                <h2 class="subheadline">{{ content.technical_skills_additional_title }}</h2>
+                <ul class="row small-up-1 medium-up-2 large-up-1">
+                    {{#each content.technical_skills_additional}}
+                        <li class="column">
+                            <div class="skill">
+                                <span class="icon fa {{ this.icon }}"></span>
+                                <span class="title">{{ this.title }}</span>  
+                            </div>
+                        </li>
+                    {{/each}}
+                </ul>
+            </section>
+        </div>
+    </section>
+    <section id="section_5" class="education section">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2 class="headline">{{ content.education_section_title }}</h2>
+                <ul class="row small-up-1 medium-up-3 large-up-4">
+                    {{#each content.education}}
+                        <li class="column column-block">
+                            <div class="course{{#if @first}} degree{{/if}}">
+                                <span class="edicon fa {{ this.icon }}"></span>
+                                <h3 class="title">{{ this.title }}</h3>
+                                <p class="specify">{{ this.specify }}</p><p class="date">{{ this.date }}</p>
+                                <p class="description">{{ this.description }} <a class="resourse" href="{{ this.resourse_href }}" target="_blank">{{ this.resourse_title }}</a></p>
+                            </div>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="section_6" class="experience section">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2 class="headline">{{ content.experience_section_title }}</h2>
+                {{#each content.experience}}
+                    <section class="ex-item row">
+                        <div class="small-12 medium-6 large-4 columns">
+                            <h3 class="title">{{ this.title }}</h3>
+                            <p class="company"><span class="ex-icon fa fa-building-o"></span>{{ this.company }}</p>
+                            <p class="period"><span class="ex-icon fa fa-calendar"></span>{{ this.period }}</p>
+                            <div class="switcher-wrap clearfix">
+                                <a class="button hollow switcher active" data-active="general" href="#">About</a>
+                                <a class="button hollow switcher" data-active="functions" href="#">Duties</a>
+                            </div>
+                        </div>
+                        <div class="small-12 medium-6 large-8 columns">
+                            <div class="general switchable">
+                                <h4 class="sub-title">Description:</h4>
+                                {{#each this.description}}
+                                    <p class="describe">{{ this }}</p>
+                                {{/each}}
+                            </div>
+                            <div class="functions switchable">
+                                <h4 class="sub-title">Accomplishments:</h4>
+                                <ul class="describe funclist">
+                                    {{#each this.functions}}
+                                        <li>{{ this }}</li>
+                                    {{/each}}
+                                </ul>   
+                            </div>
+                        </div> 
+                    </section>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+    <section id="section_7" class="contact section">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2 class="headline">Contact Me.</h2>
+                <p class="info">Jersey City, NJ 07302</p>
+                <p class="info">201-679 9905 &#x7c; macnasya@gmail.com</p>
+                <ul class="social-wrapper cfix">
+                {{#each content.social}}
+                    <li class="social"><a class="fa {{ this.icon }}" href="{{ this.link }}" target="_blank"></a></li>
+                {{/each}}
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>

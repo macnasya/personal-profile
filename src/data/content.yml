@@ -1,0 +1,331 @@
+menu:
+  - 
+    title: Home
+    id: nav_section1
+    href: section_1
+  -
+    title: Personal Skills
+    id: nav_section2
+    href: section_2
+  -
+    title: Portfolio
+    id: nav_section3
+    href: section_3
+  -
+    title: Technical skills
+    id: nav_section4
+    href: section_4
+  -
+    title: Education
+    id: nav_section5
+    href: section_5
+  -
+    title: Experience
+    id: nav_section6
+    href: section_6
+  -
+    title: Contact
+    id: nav_section7
+    href: section_7
+
+
+personal_skills_title: Personal skills.
+personal_skills:
+  -
+    title: GOAL-ORIENTED
+    description: Hardworking and self-­motivated, quick learning skills
+    icon: fa-line-chart
+  -
+    title: FOCUS DETAILED
+    description: Highly organized and focus detailed to manage multiple projects under tight deadlines
+    icon: fa-eye
+  -
+    title: TEAM PLAYER
+    description: Strong interpersonal communication skills, flexible team player ready to contribute to a winning team
+    icon: fa-futbol-o
+  -
+    title: SELF-STARTER
+    description: Self-­starter who takes proactive approach and provides suggestions for new initiatives and process improvements.
+    icon: fa-rocket
+
+portfolio_section_title: My work.
+portfolio_filters:
+  - 
+    data: filtered
+    title: ALL
+  -
+    data: markup
+    title: DEVELOPMENT
+  -
+    data: management
+    title: PROJECT MANAGMENT
+
+portfolio_projects:
+  -
+    filter_type: markup
+    link: https://www.opensky.com/
+    img_src: assets/img/p7.jpg
+    img_over_src: assets/img/p7_over.jpg
+    img_alt: OpenSky
+    title: OpenSky
+    specify: One year experience
+    type: Work collaboratively with the team using the latest technologies
+  -
+    filter_type: markup
+    link: https://www.sourcesellship.com/
+    img_src: assets/img/p8.jpg
+    img_over_src: assets/img/p8_over.jpg
+    img_alt: OSP
+    title: OSP
+    specify: One year experience
+    type: Work collaboratively with the team using the latest technologies
+  -
+    filter_type: markup
+    link: http://webgears.org/macnasya/portfolio/bcity/
+    img_src: assets/img/p1.jpg
+    img_over_src: assets/img/p1_over.jpg
+    img_alt: Borisovcity
+    title: Borisovcity
+    specify: My first webpage
+    type: HTML&CSS
+  -
+    filter_type: markup
+    link: http://webgears.org/macnasya/portfolio/hotel/
+    img_src: assets/img/p2.jpg
+    img_over_src: assets/img/p2_over.jpg
+    img_alt: HotelDelux
+    title: HotelDelux
+    specify: My second webpage
+    type: HTML&CSS
+  -
+    filter_type: markup
+    link: http://webgears.org/macnasya/portfolio/bcitynew/
+    img_src: assets/img/p3.jpg
+    img_over_src: assets/img/p3_over.jpg
+    img_alt: Borisovcity.New
+    title: Borisovcity.New
+    specify: My third webpage
+    type: HTML&CSS
+  -
+    filter_type: management
+    link: http://dalidovitch.by/
+    img_src: assets/img/p4.jpg
+    img_over_src: assets/img/p4_over.jpg
+    img_alt: Dalidovitch.by
+    title: Dalidovitch.by
+    specify: Corporative website
+    type: UX & Project Managment
+  -
+    filter_type: management
+    link: http://dnk.by/
+    img_src: assets/img/p5.jpg
+    img_over_src: assets/img/p5_over.jpg
+    img_alt: dnk.by
+    title: dnk.by
+    specify: E-commerce
+    type: UX & Project Managment
+  -
+    filter_type: management
+    link: http://beautybusiness.by/
+    img_src: assets/img/p6.jpg
+    img_over_src: assets/img/p6_over.jpg
+    img_alt: beautybusiness.by
+    title: beautybusiness.by
+    specify: Education
+    type: UX & Project Managment
+
+technical_skills_title: Technical skills.
+technical_skills:
+  -
+    progress_level: 1
+    title: HTML & CSS & SASS & LESS
+    description: Strong understanding of HTML & CSS
+  -
+    progress_level: 0.60
+    title: jQuery
+    description: Familiarity with jQuery
+  -
+    progress_level: 0.5
+    title: Backbone
+    description: A couple projects with using Backbone
+  -
+    progress_level: 0.75
+    title: Git
+    description: Good knowledge
+  -
+    progress_level: 0.5
+    title: PHP
+    description: A couple projects with using PHP
+  -
+    progress_level: 0.9
+    title: Twig
+    description: One year experience with Twig
+  -
+    progress_level: 0.9
+    title: Foundation
+    description: One year experience with Foundation
+  -
+    progress_level: 0.5
+    title: Photoshop
+    description: Enough knowledges for pixel perfect psd to html conversion 
+
+technical_skills_additional_title: A little more skills
+technical_skills_additional: 
+  -
+    icon: fa-tasks
+    title: Project Management
+  -
+    icon: fa-group
+    title: Team Leading
+  -
+    icon: fa-pie-chart
+    title: User Experience
+  -
+    icon: fa-area-chart
+    title: Marketing Analytics
+  -
+    icon: fa-sitemap
+    title: CMS Software
+  -
+    icon: fa-picture-o
+    title: Presentation Tools
+
+education_section_title: My Education.
+education:
+  -
+    icon: fa-graduation-cap
+    title: Bachelor's degree in marketing
+    specify: Belarus
+    date: 2009
+    description: Belarusian State Technological University
+    resourse_href: 
+    resourse_title: 
+  -
+    icon: fa-language
+    title: JavaScript & JQuery
+    specify: Online course
+    date: 2015
+    description: Interactive websites and animations by using JQuery
+    resourse_href: https://www.codecademy.com/learn/jquery
+    resourse_title: Codecademy
+  -
+    icon: fa-css3
+    title: CSS
+    specify: Online course
+    date: 2015
+    description: Creation websites by structuring and styling pages with HTML and CSS
+    resourse_href: https://htmlacademy.ru/learn_map
+    resourse_title: HTMLAcademy
+  -
+    icon: fa-html5
+    title: HTML
+    specify: Online course
+    date: 2015
+    description: Creation websites by structuring and styling pages with HTML and CSS
+    resourse_href: https://htmlacademy.ru/learn_map
+    resourse_title: HTMLAcademy
+  -
+    icon: fa-share-alt
+    title: Digital marketing
+    specify: Online course
+    date: 2015
+    description: Foundation diploma in Online Marketing
+    resourse_href: http://www.shawacademy.com/marketing/course-details.html
+    resourse_title: Shawacademy
+  -
+    icon: fa-puzzle-piece
+    title: Marketing
+    specify: CIM program
+    date: 2013-2014
+    description: Based upon the Professional Marketing Standards by The Chartered Institute of Marketing (Level 6)
+    resourse_href: 
+    resourse_title: 
+  -
+    icon: fa-pencil-square-o
+    title: Design
+    specify: Course
+    date: 2010
+    description: Design of printed products in CorelDraw and Photoshop
+    resourse_href: 
+    resourse_title:   
+
+experience_section_title: My Experience.
+experience:
+  -
+    title: Fron End Developer
+    company:  OSP HOLDING INC, New Yourk, NY
+    period: April 2016 - March 2017
+    description: 
+      -
+        E-commerce and advertising www.opensky.com and www.sourcesellship.com
+      -
+        Work closely with product managers, designers, software engineers, and retail specialists to build a beautiful and engaging shopping experience
+
+    functions:
+      - 
+        Web page development from markup to test and up to production deployment
+      - 
+        Develop new user-facing features
+      - 
+        Optimize application for maximum speed and scalability
+      -
+        SEO implementations (HTML5, Microdata, schema.org)
+      -
+        Fixing front-end related bug issues on existing client websites.
+  -
+    title: Marketing Manager
+    company: Dalidovitch Ltd, Belarus
+    period: August 2011 – July 2014
+    description: 
+      -
+        Dalidovitch Ltd is one of the largest importers and distributors of cosmetic products from Europe and the United States.
+      -
+        Marketing Manager, with staff of 5 subordinates. Earned promotion following superior performance and demonstrated ability to learn quickly and master complex concepts.
+      -
+        Responsible for increasing wholesale distribution of professional cosmetics; increasing sales of the products in company's retail chain; organizing educational seminars for promotion of the brands; promotion and advertising of company's education center and beauty salon. Responsible for product portfolio management; marketing, price, promotion and advertising strategies; budgeting; forecasting and reporting.
+    functions:
+      - 
+        Built the marketing department, developed functions and duties, developed motivation system and KPI, hired employees, implemented the system of reports and analysis, implemented the Project Management Software to set tasks and monitor the activities of the department.
+      - 
+        Managed the project of the development and launch of new company’s websites – dnk.by, beautybusiness.by, dalidovitch.by.
+      - 
+        Participated in creation of CRM.
+      -
+        Developed a 2-­year strategic marketing plan with annual budget and tactical annual work plan.
+      -
+        Optimized the product portfolio. The results are well-­balanced product portfolio, increasing profitability and reducing turnover rate 2.5 times.
+      - 
+        Developed a process and standards of organizing workshops (seminars, conferences) for introduction and promotion of the products to clients. This activity became an efficient method to acquire new clients and to increase sales.
+      -
+        Coordinated the development of the brand book.
+  -
+    title: Advertising Manager and Sales Manager
+    company: BPPP JSC, Belarus
+    period: July 2009 – July 2011
+    description: 
+      -
+        Borisov plastic product plant is one of the largest manufactures of plastic products in Belarus. It produces pipes and fitting, film and film products, consumer goods made of plastic, household chemicals.
+      -
+        Responsible for advertising, promotion, trade shows, promotional collaterals and online marketing; export sales of one product line.
+    functions:
+      - 
+        Work with b2b clients, participate in tenders.
+      - 
+        Planning and organization of promotional activities.
+      - 
+        Organization of participation in exhibitions and competitions.
+      -
+        Develop marketing materials and sales collateral.
+      -
+        Management and administration of company's site.
+
+social:
+  -
+    icon: fa-linkedin-square
+    link: https://www.linkedin.com/in/nastassiamakarava
+  -
+    icon: fa-facebook-square
+    link: https://www.facebook.com/profile.php?id=100004139563621
+  -
+    icon: fa-skype
+    link: skype:aronika86?chat
