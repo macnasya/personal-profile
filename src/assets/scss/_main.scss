@@ -74,18 +74,6 @@ ul {
         }
     }
 
-    .send-msg {
-        padding-left: 1.25rem;
-
-        .button {
-            font-size: 0.75rem;
-
-            @include breakpoint(large) {
-                font-size: 0.875rem;
-            }
-        }
-    }
-
     &.horizontal{
         .menu-item{
             border-top: 0.25rem solid $black;
