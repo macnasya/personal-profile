@@ -1,6 +1,6 @@
 # Nastassia Makarava
 
-## Work Profile.
+## Work Profile http://webgears.org/macnasya/
 
 Based on Foundation ZURB Template. It has a Gulp-powered build system with these features:
 
